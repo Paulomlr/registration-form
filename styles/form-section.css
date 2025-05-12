@@ -1,0 +1,218 @@
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 6rem 8rem;
+    gap: 4.4rem;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.form-section header {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form-section header p {
+    color: var(--text-secondary);
+}
+
+.form-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.child-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.child-info label {
+    color: var(--text-secondary);
+}
+
+.label-name,
+.label-date,
+.label-sex,
+.label-text,
+.label-certidao-nascimento,
+.label-cep,
+.label-street,
+.label-number,
+.label-city,
+.label-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    border: 0.1rem solid #D6D3D1;
+    border-radius: 0.8rem;
+    padding: 1.3rem;
+}
+
+textarea {
+    border: 0.1rem solid #D6D3D1;
+    border-radius: 0.8rem;
+    padding: 1.3rem;
+    min-height: 11rem;
+    resize: vertical;
+}
+
+.label-certidao-nascimento input {
+    min-height: 20rem;
+}
+
+.label-street,
+.label-city {
+    flex: 3;
+}
+
+.residential-address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.residential-address label {
+    color: var(--text-secondary);
+}
+
+.address-info,
+.city-info {
+    display: flex;
+    gap: 2.6rem;
+}
+
+.responsible-person {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.responsible-person label {
+    color: var(--text-secondary);
+}
+
+.label-responsible-name,
+.label-responsible-phone,
+.label-responsible-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.registration p {
+    color: var(--text-secondary);
+}
+
+.registration label p {
+    color: #000;
+}
+
+.options-turn,
+.options-sport {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+}
+
+.morning,
+.afternoon,
+.football,
+.basketball,
+.swimming,
+.yoga,
+.volleyball,
+.boxing {
+    flex: 1;
+    border: 0.1rem solid;
+    border-radius: 0.8rem;
+    color: var(--stroke-default);
+    padding: 1rem;
+}
+
+.morning div,
+.afternoon div,
+.football div,
+.basketball div,
+.swimming div,
+.yoga div,
+.volleyball div,
+.boxing div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkmark {
+    display: flex;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 0.2rem solid var(--stroke-default);
+    border-radius: 50%;
+    position: relative;
+}
+
+.options-sport img,
+.options-turn img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.check {
+    display: flex;
+    width: 2.6rem;
+    height: 2.2rem;
+    border: 0.2rem solid var(--stroke-default);
+    border-radius: 30%;
+}
+
+.checkbox p {
+    color: var(--text-secondary);
+}
+
+.checkbox span {
+    color: var(--brand-dark);
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+button {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--brand-dark);
+    background-color: #fff;
+}
+
+button p {
+    font-size: larger;
+    color: var(--brand-dark);
+    font-weight: 500;
+}
