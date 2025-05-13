@@ -232,6 +232,28 @@ textarea {
 .checkbox span {
     color: var(--brand-dark);
     font-weight: 500;
+    cursor: pointer;
+}
+
+.checkbox .check:not(.active):hover {
+    background-color: var(--surface-hover);
+    border-color: var(--stroke-highlight);
+}
+
+.checkbox .check.active {
+    background-color: var(--brand-default);
+    border-color: var(--brand-default);
+}
+
+.checkbox .check.active::after {
+    flex: 1;
+    content: "✓";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-mind);
+    color: white;
+    font-size: 2rem;
 }
 
 footer {

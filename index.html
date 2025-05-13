@@ -209,4 +209,13 @@
     </main>
 </body>
 
+<script>
+    document.querySelectorAll('.check').forEach(check => {
+        check.addEventListener('click', function (e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+        });
+    });
+</script>
+
 </html>
