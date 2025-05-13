@@ -286,10 +286,29 @@ button {
     border-radius: 0.8rem;
     border: 0.1rem solid var(--brand-dark);
     background-color: #fff;
+    cursor: pointer;
 }
 
 button p {
     font-size: larger;
     color: var(--brand-dark);
     font-weight: 500;
+}
+
+button:hover {
+  box-shadow: 0 0 0 0.4rem var(--surface-secondary);
+}
+
+button.selected {
+  background-color: var(--brand-dark);
+  border: none;
+}
+
+button.selected p {
+  color: white;
+}
+
+button.selected:hover {
+  background-color: var(--brand-mind);
+  box-shadow: none;
 }
