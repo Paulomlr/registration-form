@@ -39,6 +39,10 @@
     color: var(--text-secondary);
 }
 
+.child-info input {
+    color: var(--text-secondary);
+}
+
 .label-name,
 .label-date,
 .label-sex,
@@ -59,6 +63,21 @@ select {
     border: 0.1rem solid #D6D3D1;
     border-radius: 0.8rem;
     padding: 1.3rem;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 0.1rem solid var(--stroke-highlight);
+  box-shadow: 0 0 0 0.3rem var(--surface-secondary);
+  outline: none;
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown),
+select:valid {
+  color: var(--text-primary);
 }
 
 textarea {
