@@ -39,7 +39,8 @@
     color: var(--text-secondary);
 }
 
-.child-info input {
+.child-info input,
+.child-info select {
     color: var(--text-secondary);
 }
 
@@ -72,11 +73,10 @@ textarea:focus {
   border: 0.1rem solid var(--stroke-highlight);
   box-shadow: 0 0 0 0.3rem var(--surface-secondary);
   outline: none;
+   color: var(--text-primary);
 }
 
-input:not(:placeholder-shown),
-textarea:not(:placeholder-shown),
-select:valid {
+input[name="name"]:valid {
   color: var(--text-primary);
 }
 
