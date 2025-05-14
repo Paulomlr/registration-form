@@ -35,3 +35,13 @@
 .form-section::-webkit-scrollbar {
     width: 0.8rem;
 }
+
+.info-text div {
+    display: flex;
+    gap: 1rem;
+}
+
+.info-text img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
