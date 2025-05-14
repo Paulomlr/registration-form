@@ -140,7 +140,7 @@
                         <label class="basketball">
                             <span class="checkmark"></span>
                             <div>
-                                <input type="radio" name="sport" value="baskteball" hidden>
+                                <input type="radio" name="sport" value="basketball" hidden>
                                 <img src="./assets/basketball-02.png" alt="Imagem de uma bola de basquete">
                                 <p>Basquete</p>
                             </div>
@@ -224,6 +224,22 @@
         btn.addEventListener('click', () => {
             buttons.forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
+        });
+    });
+
+    const turnLabels = document.querySelectorAll('.options-turn label');
+    turnLabels.forEach(label => {
+        label.addEventListener('click', () => {
+            turnLabels.forEach(l => l.classList.remove('selected'));
+            label.classList.add('selected');
+        });
+    });
+
+    const sportLabels = document.querySelectorAll('.options-sport label');
+    sportLabels.forEach(label => {
+        label.addEventListener('click', () => {
+            sportLabels.forEach(l => l.classList.remove('selected'));
+            label.classList.add('selected');
         });
     });
 </script>

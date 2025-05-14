@@ -200,6 +200,7 @@ textarea {
     border-radius: 0.8rem;
     color: var(--stroke-default);
     padding: 1rem;
+    cursor: pointer;
 }
 
 .morning div,
@@ -215,7 +216,41 @@ textarea {
     align-items: center;
 }
 
-.checkmark {
+.options-sport label:hover,
+.options-turn label:hover {
+    border-color: var(--stroke-highlight);
+}
+
+.options-sport label:hover .checkmark,
+.options-turn label:hover .checkmark {
+    border-color: var(--stroke-highlight);
+}
+
+.options-sport label.selected,
+.options-turn label.selected {
+    border-color: var(--stroke-highlight);
+}
+
+.options-sport label.selected .checkmark::after,
+.options-turn label.selected .checkmark::after {
+    flex: 1;
+    content: "✓";
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--stroke-highlight);
+    font-size: 2rem;
+}
+
+.options-sport label.selected .checkmark,
+.options-turn label.selected .checkmark {
+    border-color: var(--stroke-highlight) !important;
+    background-color: var(--stroke-highlight);
+}
+
+.checkmark{
     display: flex;
     width: 2.2rem;
     height: 2.2rem;
