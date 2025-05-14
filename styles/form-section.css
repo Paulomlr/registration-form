@@ -347,3 +347,16 @@ button.selected:hover {
   background-color: var(--brand-mind);
   box-shadow: none;
 }
+
+.label-responsible-email .error-message {
+    color: red;
+    visibility: hidden;
+}
+
+.label-responsible-email input:invalid:not(:placeholder-shown) ~ .error-message {
+  visibility: visible;
+}
+
+.label-responsible-name span {
+    color: #78716C;
+}
